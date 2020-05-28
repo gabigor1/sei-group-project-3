@@ -10,11 +10,10 @@ export const withHeaders = () => {
   }
 }
 
-
-
 export const getUserGroups = () => {
   return axios.get('/api/groups', withHeaders())
 }
+
 export const getGroup = async groupId => {
   return await axios.get(`${baseUrl}/groups/${groupId}`)
 }

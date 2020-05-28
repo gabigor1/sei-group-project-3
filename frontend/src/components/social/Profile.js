@@ -44,7 +44,7 @@ componentDidUpdate = async (prevProps) => {
         const res = await getProfile(userId)
         const getCurrentId = await getUserId()
         const currentUser = await getProfile(getCurrentId)
-        await this.setState( { user: res.data, currentUser : currentUser.data  }) 
+        this.setState( { user: res.data, currentUser : currentUser.data  }) 
         this.getData()
        } catch (err) {
           console.log(err)
@@ -114,7 +114,7 @@ profileEditted = async() => {
 render(){
   const { user } = this.state
   const posts = user.posts ? user.posts : []
-  
+
   return (
     <div className='profile-page-container'>
       <ToastContainer/>
@@ -136,7 +136,7 @@ render(){
         </div>
         <div className='profile-post'>
           <Post 
-            user={this.state.user}
+            currentUser={this.state.user}
             refresh={this.getData}
           />
       {posts.slice(0).reverse().map((post, i) => {
