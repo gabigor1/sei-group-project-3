@@ -63,8 +63,7 @@ class gymShow extends React.Component {
 
   render() { 
     const baseUrl = 'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference='
-    const key = '&key=AIzaSyAn3WW4SI3RHmQ7I_6HFcrUTdNalXkoJ4A'
-
+    const key = process.env.REACT_APP_API_KEY
     return (  
       <div className='gym-show-page'> 
         <div className='page-top'>
@@ -82,7 +81,7 @@ class gymShow extends React.Component {
             speeds={500}>
               {this.state.photoReferences.map(photo => {
                 return <div className='slide'>
-                  <img  alt='gym-pics' className='gym-img' src={`${baseUrl}${photo}${key}`}/></div> 
+                  <img  alt='gym-pics' className='gym-img' src={`${baseUrl}${photo}&key=${key}`}/></div> 
                 })}
           </Slider>
             <div className='slider-two'>
@@ -95,7 +94,7 @@ class gymShow extends React.Component {
             className='slides-two'> 
               {this.state.photoReferences.map(photo => {
                 return <div className='slide-two'>
-                <img alt='gym-pics'className='slider-two-img' src={`${baseUrl}${photo}${key}`}/> 
+                <img alt='gym-pics'className='slider-two-img' src={`${baseUrl}${photo}&key=${key}`}/> 
                 </div> 
               })}
           </Slider>

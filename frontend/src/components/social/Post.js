@@ -25,7 +25,7 @@ handleChange = event => {
 handleSubmit = async event => {
   event.preventDefault()
   try {
-    await postContent(this.state.formData, this.props.user.id)
+    await postContent(this.state.formData, this.props.currentUser.id)
     console.log('Post sent!')
     this.clearPost()
     this.props.refresh()
