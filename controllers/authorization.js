@@ -1,6 +1,6 @@
 const User = require('../models/user')
 const jwt = require('jsonwebtoken')
-const secret = process.env.REACT_APP_SECRET
+const secret = process.env.SECRET || process.env.REACT_APP_SECRET
 
 
 async function login (req, res) {

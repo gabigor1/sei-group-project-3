@@ -4,8 +4,8 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const router = require('./config/routes')
 const app = express()
-const port = 8000
-const dbURI = 'mongodb://localhost/spotme-db'
+const port = process.env.PORT || 8000
+const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/spotme-db'
 const errorHandler = require('./lib/errorHandler')
 
 
@@ -20,11 +20,14 @@ mongoose.connect(
 
 // Middleware here
 
-
+app.use(express.static(`${__dirname}/frontend/build`))
 
 app.use(bodyParser.json())
 
 app.use('/api', router)
+
+app.use('/*', (req, res) => res.sendFile(`${__dirname}/frontend/build/index.html`))
+
 app.use(errorHandler)
 
 
