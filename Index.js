@@ -4,8 +4,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const router = require('./config/routes')
 const app = express()
-const port = process.env.PORT || 8000
-const dbURI = process.env.MONGODB_URI || 'mongodb://localhost/spotme-db'
+const { dbURI, port } = require('./config/environment')
 const errorHandler = require('./lib/errorHandler')
 
 
