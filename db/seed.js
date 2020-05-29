@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const faker = require('faker')
 const User = require('../models/user')
-const { dbURI } = require('./config/environment')
+const { dbURI } = require('../config/environment')
 const defaultProfiles = require('./data/users')
 
 
