@@ -7,7 +7,12 @@ General Assembly Project 3 : - Spot-me
 ## Goal: 
 Team project to design and create a MERN app using MongoDB, Mongoose and third-parties APIs
 
-Timeframe: 7 days
+* Timeframe: 7 days
+* Group members: 4
+
+## Communication
+
+We had a team standup every morning to update our progress every morning, what we were planning to do next, as well as express any blockers we were experiencing. We also stayed in contact with each other throughout the day for advice.
 
 ## Table of Contents
 
@@ -44,6 +49,30 @@ This group project was a good experience to learn about teamwork, how to organiz
 - Google API
 - Axios
 
+## Timeline
+
+**Highlighted:** My contribution.
+
+* Day 1: Completed wireframe design, and mapped out schemas.
+
+* Day 2 :Created frontend and backend for login, registration, **navbar**, and **profile pages**.
+
+* Day 3: Completed Schema for users in the backend, location search and **information page** in frontend.
+
+* Day 4: Added seeds, posting, and **post viewing functionality**.
+
+* Day 5: Completed comment and likes to posts, **gym information pages**, group creation, and following.
+
+* Day 6: Implimented Messaging, **home page**, search bar, **styling**. 
+
+* Day 7: Bug fixes and **styling**.
+
+## Wireframe
+
+Before we started we created the overall wireframe for the pages using Figma. We wanted to give a clear outline of what the end product would be, the main reason to save time when it came to the styling phase.
+
+![wireframe](assets/wireframe.png)
+
 ## View
 
 ### Profile page
@@ -66,9 +95,11 @@ This group project was a good experience to learn about teamwork, how to organiz
 
 ![Fitnessinfo](assets/fitnessinfo.png)
 
-## Win
+## Featured code
 
-Making the NewsFeeds was a big win for me, I managed to retrieve the data from the backend to render it correctly in the profile page. I found that if the r
+### NewsFeeds
+
+I implimented the Newsfeeds for the profile and home page, which the user can receive and see the information of posts, comments and likes, also if the user post or comment something he can delete or edit the messages.
 
 ```
 class NewsFeedsCard extends React.Component {
@@ -195,9 +226,151 @@ class NewsFeedsCard extends React.Component {
 export default NewsFeedsCard
 ```
 
+### Styling
+
+I spend much of my time styling all the app. I struggle to fit everything with the correct scale, but thanks to the property position I fit everything. I'm proud of the style of the locations and mapbox. 
+
+```
+.locations {
+  position: fixed;
+  top: 60px;
+  left: 300px;
+}
+
+.sidebar {
+  background-color: #343D42;
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 220px;
+  height: 100%;
+  color: #E5E5E5;
+}
+
+.gym-search-container {
+  background-color: #3DB2C2;
+
+  .gym-search-form {
+    display: flex;
+
+    p {
+      color: #000000;
+    }
+  }
+
+  .keyword-field {
+    margin: 10px 40px 10px 10px;
+  }
+
+  .radius-field {
+    margin: 10px;
+  }
+  
+  .address-field {
+    margin: 10px;
+  }
+
+  .form-input {
+    background-color: #C4C4C4;
+  }
+
+  button {
+    margin: 35px 0px 0px 10px;
+    background-color:#DA5C5C;
+  }
+
+  button:hover {
+    background-color:#6A6767;
+  }
+}
+
+.gym-modal-info {
+  height: 150px;
+  width: 600px;
+  background-color: white;
+
+  .close {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    color: grey;
+  }
+
+  h1 {
+    font-weight: 700;
+    margin-left: 10px;
+  }
+
+  p {
+    margin-left: 10px;
+  }
+}
+
+.searchBarNav {
+  width: 300px;
+  height: 30px;
+  margin-top: 15px;
+  border-radius: 5px;
+
+}
+
+.inline-link {
+  width:100%;
+  display: flex;
+  flex-wrap: nowrap;
+  
+  p {
+    display: inline-block;
+    
+    margin-left: 10px;
+    margin-bottom: 15px;
+    
+  }
+  margin: 0;
+}
+
+.no-padd {
+  padding: 0;
+}
+
+.item-styling {
+  display: block;
+}
+
+.centered {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 35%;
+}
+
+.searchbar-profile-picture {
+  transform: scale(1.5);
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-top: -2px;
+  margin-right: 5px;
+}
+
+.field-searchbar-item {
+  width:100%
+}
+```
+
+## Win
+
+Making the NewsFeeds was a big win for me, I managed to retrieve the data from the backend to render it correctly in the profile page. Styling the app and made it similar to the wireframe we draw is one of my biggest wins in this project.
+
 ## Challenges
 
 One of the challenges we faced was communicated properly, so many times me or other person of the group change something but didn't say it, making us losing time. Other challenge was to make backend relationships and populate them. We fix the backend problems but it cost us a lot of time.
+
+## Bugs
+
+* Friends sidebar does not show names, there are limitation with the architecture of the user schema.
+
+* Message deleting only deletes for user and not recipent.
 
 ## Lesson
 
