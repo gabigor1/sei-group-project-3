@@ -10,10 +10,6 @@ Team project to design and create a MERN app using MongoDB, Mongoose and third-p
 * Timeframe: 7 days
 * Group members: 4
 
-## Communication
-
-We had a team standup every morning to update our progress every morning, what we were planning to do next, as well as express any blockers we were experiencing. We also stayed in contact with each other throughout the day for advice.
-
 ## Table of Contents
 
 - [Overview](#overview)
@@ -23,13 +19,17 @@ We had a team standup every morning to update our progress every morning, what w
 - [Challenges](#challenges)
 - [Lesson](#lesson)
 
+## Stand Up
+
+We had a team standup every morning to update our progress every morning, what we were planning to do next, as well as express any blockers we were experiencing. We also stayed in contact with each other throughout the day for advice.
+
 ## Overview
 
-Spot-me is a full stack social media app that uses third-party APIs (Mapbox and Google Places) to build a plataform to encourage users to find fitness facilities in their area, follow users, create groups and posts. 
+Spot-me is a full-stack social media app that uses third-party APIs (Mapbox and Google Places) to build a platform to encourage users to find fitness facilities in their area, follow users, create groups and posts.
 
 Our app required data from Google Places, fitness facilities reviews and data, and Mapbox to produce a map of the zone, where you can check the near facility.
 
-This group project was a good experience to learn about teamwork, how to organize the task and how to manage time. We divided the tasks between the members of the group, I worked styling the app using SASS and Bulma, also I worked in the frontend development, profile and newsfeed development
+This group project was a good experience to learn about teamwork, how to organize the task, and how to manage time. We divided the tasks between the members of the group, I worked styling the app using SASS and Bulma, also I worked in the frontend development, profile and newsfeed development
 
 ## Technologies
 
@@ -55,15 +55,15 @@ This group project was a good experience to learn about teamwork, how to organiz
 
 * Day 1: Completed wireframe design, and mapped out schemas.
 
-* Day 2 :Created frontend and backend for login, registration, **navbar**, and **profile pages**.
+* Day 2: Created frontend and backend for login, registration, **navbar**, and **profile pages**.
 
-* Day 3: Completed Schema for users in the backend, location search and **information page** in frontend.
+* Day 3: Completed Schema for users in the backend, location search, and **information page** in frontend.
 
-* Day 4: Added seeds, posting, and **post viewing functionality**.
+* Day 4: Added seeds, posting, and **post-viewing functionality**.
 
 * Day 5: Completed comment and likes to posts, **gym information pages**, group creation, and following.
 
-* Day 6: Implimented Messaging, **home page**, search bar, **styling**. 
+* Day 6: Implimented Messaging, **home page**, search bar, **styling**.
 
 * Day 7: Bug fixes and **styling**.
 
@@ -99,7 +99,7 @@ Before we started we created the overall wireframe for the pages using Figma. We
 
 ### NewsFeeds
 
-I implimented the Newsfeeds for the profile and home page, which the user can receive and see the information of posts, comments and likes, also if the user post or comment something he can delete or edit the messages.
+I implemented the Newsfeeds for the profile and home page, which the user can receive and see the information of posts, comments, and likes, also if the user post or comment something he can delete or edit the messages.
 
 ```
 class NewsFeedsCard extends React.Component {
@@ -228,7 +228,7 @@ export default NewsFeedsCard
 
 ### Styling
 
-I spend much of my time styling all the app. I struggle to fit everything with the correct scale, but thanks to the property position I fit everything. I'm proud of the style of the locations and mapbox. 
+I spend much of my time styling all the app. I struggle to fit everything with the correct scale, but thanks to the property position I fit everything. I'm proud of the style of the locations and Mapbox. 
 
 ```
 .locations {
@@ -364,14 +364,14 @@ Making the NewsFeeds was a big win for me, I managed to retrieve the data from t
 
 ## Challenges
 
-One of the challenges we faced was communicated properly, so many times me or other person of the group change something but didn't say it, making us losing time. Other challenge was to make backend relationships and populate them. We fix the backend problems but it cost us a lot of time.
+One of the challenges we faced was communicated properly, so many times I or other people of the group change something but didn't say it, making us losing time. Another challenge was to make backend relationships and populate them. We fix the backend problems but it cost us a lot of time.
 
 ## Bugs
 
-* Friends sidebar does not show names, there are limitation with the architecture of the user schema.
+* Friends sidebar does not show names, there are limitations with the architecture of the user schema.
 
-* Message deleting only deletes for user and not recipent.
+* Message deleting only deletes for the user and not the recipient.
 
 ## Lesson
 
-A better understanding on how the BackEnd and FrontEnd works togethers and how works the props and and whether to put the state in the parent component save a lot of time. Work in team communication, we often commited so mistakes and we didn't talk about how our work was progressing.
+A better understanding of how the BackEnd and FrontEnd work together and how works the props and whether to put the state in the parent component save a lot of time. Work in team communication, we often committed so mistakes and we didn't talk about how our work was progressing.
