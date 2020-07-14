@@ -15,9 +15,9 @@ Team project to design and create a MERN app using MongoDB, Mongoose and third-p
 - [Overview](#overview)
 - [Technologies](#technologies)
 - [View](#view)
-- [Win](#win)
+- [Wins](#wins)
 - [Challenges](#challenges)
-- [Lesson](#lesson)
+- [Lessons Learn](#lesson)
  
 ## Stand Up
  
@@ -29,7 +29,7 @@ Spot-me is a full-stack social media app that uses third-party APIs (Mapbox and 
  
 Our app required data from Google Places, fitness facilities reviews and data, and Mapbox to produce a map of the zone, where you can check the near facility.
  
-This group project was a good experience to learn about teamwork, how to organize the task, and how to manage time. We divided the tasks between the members of the group, I worked styling the app using SASS and Bulma, also I worked in the frontend development, profile and newsfeed development
+This group project was a good experience to learn about teamwork, how to organize the task, and how to manage time. We divided the tasks among the members of the group; I worked styling the app using SASS and Bulma, I also worked in the frontend development, profile and newsfeed development.
  
 ## Technologies
  
@@ -228,7 +228,7 @@ export default NewsFeedsCard
  
 ### Styling
  
-I spend much of my time styling all the app. I struggle to fit everything with the correct scale, but thanks to the property position I fit everything. I'm proud of the style of the locations and Mapbox.
+I spent much of my time styling all the app. I struggled to fit everything with the correct scale, but thanks to the property position I managed to make everything fit. I'm proud of the style of the locations and Mapbox.
  
 ```
 .locations {
@@ -356,13 +356,13 @@ I spend much of my time styling all the app. I struggle to fit everything with t
 }
 ```
  
-## Win
+## Wins
  
 Making the NewsFeeds was a big win for me, I managed to retrieve the data from the backend to render it correctly in the profile page. Styling the app and made it similar to the wireframe we draw is one of my biggest wins in this project.
  
 ## Challenges
  
-One of the challenges we faced was communicated properly, so many times I or other people of the group change something but didn't say it, making us losing time. Another challenge was to make backend relationships and populate them. We fix the backend problems but it cost us a lot of time.
+One of the challenges we faced was communicatting; so many times I or other people of the group changed something but didn't say it, resulting in setbacks for the deadlines. Another challenge was to make backend relationships and populate them. We fixed the backend problems but it cost us a lot of time.
  
 ## Bugs
  
