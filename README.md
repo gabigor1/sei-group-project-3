@@ -27,7 +27,7 @@ We had a team standup every morning to update our progress, what we were plannin
  
 Spot-me is a full-stack social media app that uses third-party APIs (Mapbox and Google Places) to build a platform to encourage users to find fitness facilities in their area, follow users, create groups and posts.
  
-Our app required data from Google Places, fitness facilities reviews and data, and Mapbox to produce a map of the zone, where you can check the near facility.
+Our app required data from Google Places, fitness facilities reviews and data, and Mapbox to produce a map of the zone, where you can check the nearest facility.
  
 This group project was a good experience to learn about teamwork, how to organize the task, and how to manage time. We divided the tasks among the members of the group; I worked styling the app using SASS and Bulma, I also worked in the frontend development, profile and newsfeed development.
  
@@ -69,7 +69,7 @@ This group project was a good experience to learn about teamwork, how to organiz
  
 ## Wireframe
  
-Before we started we created the overall wireframe for the pages using Figma. We wanted to give a clear outline of what the end product would be, the main reason to save time when it came to the styling phase.
+Before we started we created the overall wireframe for the pages using Figma. We wanted to give a clear outline of what the end product would be, the main reason was to save time when it came to the styling phase.
  
 ![wireframe](assets/wireframe.png)
  
@@ -99,7 +99,7 @@ Before we started we created the overall wireframe for the pages using Figma. We
  
 ### NewsFeeds
  
-I implemented the Newsfeeds for the profile and home page, which the user can receive and see the information of posts, comments, and likes, also if the user post or comment something he can delete or edit the messages.
+I implemented the Newsfeeds for the profile and home page, which the user can receive and see the information of posts, comments, and likes, also if the user posts or comment on something they can delete or edit the messages.
  
 ```
 class NewsFeedsCard extends React.Component {
@@ -228,7 +228,7 @@ export default NewsFeedsCard
  
 ### Styling
  
-I spent much of my time styling all the app. I struggled to fit everything with the correct scale, but thanks to the property position I managed to make everything fit. I'm proud of the style of the locations and Mapbox.
+I spent much of my time styling all the app. I struggled to fit everything to the correct scale, but thanks to the property position I managed to make everything fit. I'm proud of the style of the locations and Mapbox.
  
 ```
 .locations {
@@ -358,7 +358,7 @@ I spent much of my time styling all the app. I struggled to fit everything with 
  
 ## Wins
  
-Making the NewsFeeds was a big win for me, I managed to retrieve the data from the backend to render it correctly in the profile page. Styling the app and made it similar to the wireframe we draw is one of my biggest wins in this project.
+Making the NewsFeeds was a big win for me, I managed to retrieve the data from the backend to render it correctly in the profile page. Styling the app and made it similar to the wireframe we drew is one of my biggest wins in this project.
  
 ## Challenges
  
@@ -372,4 +372,4 @@ One of the challenges we faced was communicatting; so many times I or other peop
  
 ## Lesson
  
-A better understanding of how the BackEnd and FrontEnd work together and how works the props and whether to put the state in the parent component save a lot of time. Work in team communication, we often committed so mistakes and we didn't talk about how our work was progressing.
+A better understanding of how the BackEnd and FrontEnd work together and how works the props and whether to put the state in the parent component saves a lot of time. Work in team communication, we often committed some mistakes and we didn't talk about how our work was progressing.
