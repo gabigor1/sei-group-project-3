@@ -362,7 +362,7 @@ Making the NewsFeeds was a big win for me, I managed to retrieve the data from t
  
 ## Challenges
  
-One of the challenges we faced was communicatting; so many times I or other people of the group changed something but didn't say it, resulting in setbacks for the deadlines. Another challenge was to make backend relationships and populate them. We fixed the backend problems but it cost us a lot of time.
+One of the challenges we faced was communicating; so many times I or other people of the group changed something but didn't say it, resulting in setbacks for the deadlines. Another challenge was to make backend relationships and populate them. We fixed the backend problems but it cost us a lot of time.
  
 ## Bugs
  
