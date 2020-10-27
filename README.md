@@ -2,7 +2,7 @@
  
 General Assembly Project 3: - Spot-me
  
-## https://film-space-django.herokuapp.com/
+## https://gabigor-project.herokuapp.com/
  
 ## Goal:
 Team project to design and create a MERN app using MongoDB, Mongoose and third-parties APIs
